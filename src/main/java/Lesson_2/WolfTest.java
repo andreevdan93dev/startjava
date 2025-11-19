@@ -9,6 +9,7 @@ public class WolfTest {
         wolf.run();
         wolf.howling();
         wolf.hunting();
+        System.out.println("end");
     }
 
 
