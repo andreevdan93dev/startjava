@@ -19,15 +19,15 @@ public class GuessNumber {
 
     public void startGuess() {
         setGuessNumber();
-        System.out.printf("%s, %s, добро пожаловать в угодай число\n", firstPlayer.getName(), secondPlayer.getName());
+        System.out.printf("%s, %s, добро пожаловать в угодай число\n", firstPlayer.name(), secondPlayer.name());
         int inputNumber = 0;
         Player player = getStartPlayer();
         while (guessNumber != inputNumber) {
-            System.out.printf("%s, Угадай число\n", player.getName());
+            System.out.printf("%s, Угадай число\n", player.name());
             inputNumber = SCANNER.nextInt();
             if (inputNumber == guessNumber) {
                 System.out.println("Верно");
-                System.out.printf("%s победил!\n", player.getName());
+                System.out.printf("%s победил!\n", player.name());
             } else if (inputNumber > guessNumber) {
                 System.out.printf("%d больше того, что загадал компьютер\n", inputNumber);
             } else {
