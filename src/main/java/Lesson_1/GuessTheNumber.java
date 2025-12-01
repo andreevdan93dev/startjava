@@ -3,7 +3,7 @@ package Lesson_1;
 import java.util.Random;
 import java.util.Scanner;
 
-public class CatchTheNumber {
+public class GuessTheNumber {
     private static final Random RANDOM = new Random();
     private static final Scanner SCANNER = new Scanner(System.in);
 
