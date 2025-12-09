@@ -1,21 +1,19 @@
-package Lesson_2;
+package lesson_2;
 
-public class Wolf {
+public class Person {
     private String gender;
     private String name;
+    private int height;
     private int weight;
     private int age;
-    private String color;
 
-    public Wolf() {
-    }
 
-    public Wolf(String gender, String name, int weight, int age, String color) {
+    public Person(String gender, String name, int height, int weight, int age) {
         this.gender = gender;
         this.name = name;
+        this.height = height;
         this.weight = weight;
         this.age = age;
-        this.color = color;
     }
 
     public void walk() {
@@ -30,13 +28,14 @@ public class Wolf {
         System.out.println(name + " бежит");
     }
 
-    public void howling() {
-        System.out.println(name + " воет");
+    public void talk() {
+        System.out.println(name + " говорит");
     }
 
-    public void hunting() {
-        System.out.println(name + " охотится");
+    public void learnJava() {
+        System.out.println(name + " учит джаву");
     }
+
 
     public String getGender() {
         return gender;
@@ -54,6 +53,14 @@ public class Wolf {
         this.name = name;
     }
 
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
     public int getWeight() {
         return weight;
     }
@@ -67,29 +74,6 @@ public class Wolf {
     }
 
     public void setAge(int age) {
-        if (age < 0 || age > 8) {
-            System.out.println("Некорректный возраст");
-            return;
-        }
         this.age = age;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    @Override
-    public String toString() {
-        return "Wolf{" +
-                "gender='" + gender + '\'' +
-                ", name='" + name + '\'' +
-                ", weight=" + weight +
-                ", age=" + age +
-                ", color='" + color + '\'' +
-                '}';
     }
 }
