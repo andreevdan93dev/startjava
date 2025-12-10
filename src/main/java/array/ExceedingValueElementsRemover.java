@@ -4,14 +4,14 @@ public class ExceedingValueElementsRemover {
     private static final int ARRAY_LEN = 15;
 
     public static void main(String[] args) {
-        removeElementsExceededThatValue(-1);
-        removeElementsExceededThatValue(15);
-        removeElementsExceededThatValue(0);
-        removeElementsExceededThatValue(14);
+        removeElementsExceededThanValue(-1);
+        removeElementsExceededThanValue(15);
+        removeElementsExceededThanValue(0);
+        removeElementsExceededThanValue(14);
 
     }
 
-    private static void removeElementsExceededThatValue(Integer index) {
+    private static void removeElementsExceededThanValue(Integer index) {
         if (index == null) {
             System.out.println("Ошибка: index не может быть null");
             return;
