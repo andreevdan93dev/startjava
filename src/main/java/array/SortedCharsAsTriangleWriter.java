@@ -1,7 +1,5 @@
 package array;
 
-import java.util.Arrays;
-
 public class SortedCharsAsTriangleWriter {
     public static void main(String[] args) {
         writeChars('0', '9', true);
